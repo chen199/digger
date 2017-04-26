@@ -1,6 +1,6 @@
 {
   "name": "objectdigger",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "object digger",
   "main": "index.js",
   "scripts": {
