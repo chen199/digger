@@ -15,6 +15,27 @@ module.exports = function () {
 		return newObj
 	};
 
+       var deepestObject = function (object) {
+		var diggedObj = createFlatObject(object);
+		var keys = Object.keys(diggedObj);
+
+		var max = 0;
+		var maxKey = null;
+		keys.forEach(function (key) {
+			console.log("test for key " + key)
+			var num = (key.match(/./g) || []).length;
+			if(num > max) {
+				max = num;
+				maxKey = key;
+			}
+		})
+		return {
+			maxKey: maxKey,
+			value: diggedObj[maxKey],
+			depth: max
+		}
+	}
+
 	var keepDrill = function (key, value) {
 		if( Object.prototype.toString.call( value ) === '[object Array]' ) {
 			value.forEach(function(item){
@@ -55,7 +76,8 @@ module.exports = function () {
 	};
 
 	return {
-		dig: createFlatObject
+		dig: createFlatObject,
+		findDeepest: deepestObject
 	};
 
 }
