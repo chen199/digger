@@ -22,7 +22,6 @@ module.exports = function () {
 		var max = 0;
 		var maxKey = null;
 		keys.forEach(function (key) {
-			console.log("test for key " + key)
 			var num = (key.match(/./g) || []).length;
 			if(num > max) {
 				max = num;
