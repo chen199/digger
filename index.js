@@ -22,7 +22,7 @@ module.exports = function () {
 		var max = 0;
 		var maxKey = null;
 		keys.forEach(function (key) {
-			var num = key.split(".").length - 1;
+			var num = key.split(".").length;
 			if(num > max) {
 				max = num;
 				maxKey = key;
