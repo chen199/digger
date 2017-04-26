@@ -1,5 +1,5 @@
 
-rts = function () {
+module.exports = function () {
 	var newObj = {};
 
 	var createFlatObject = function(object){
