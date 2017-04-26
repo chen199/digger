@@ -1,0 +1,19 @@
+{
+  "name": "objectdigger",
+  "version": "0.1.0",
+  "description": "object digger",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chen199/objectdigger.git"
+  },
+  "author": "Chen Navon, Rotem Yohanan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chen199/objectdigger/issues"
+  },
+  "homepage": "https://github.com/chen199/objectdigger#readme"
+}
