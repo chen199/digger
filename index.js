@@ -1,5 +1,4 @@
-
-module.exports = function () {
+module.exports = (function () {
 	var newObj = {};
 
 	var createFlatObject = function(object){
@@ -15,14 +14,14 @@ module.exports = function () {
 		return newObj
 	};
 
-       var deepestObject = function (object) {
+	var deepestObject = function (object) {
 		var diggedObj = createFlatObject(object);
 		var keys = Object.keys(diggedObj);
 
 		var max = 0;
 		var maxKey = null;
 		keys.forEach(function (key) {
-			var num = key.split(".").length;
+			var num = key.split(".").length - 1;
 			if(num > max) {
 				max = num;
 				maxKey = key;
@@ -79,4 +78,4 @@ module.exports = function () {
 		findDeepest: deepestObject
 	};
 
-}
+})();
