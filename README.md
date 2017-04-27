@@ -74,7 +74,7 @@ var item = {
 };
 
 
-console.log(digger.dig(item));
+console.log(digger.findDeepest(item));
 
 ```
 Output:
